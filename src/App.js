@@ -58,11 +58,17 @@ function App() {
     timem: "",
   });
 
+    useEffect(() => {
+      getWeatherParis();
+      getWeatherMoscow();
+      getWeatherLondon();
+    }, []);
+
   const { datasm, tempm, skym, iconm, timem } = moscow;
 
   const getWeatherMoscow = async () => {
     const api = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=moscow&appid=62029f0d3701271a5e50142b280915f0
+      `https://api.openweathermap.org/data/2.5/weather?q=moscow&appid=62029f0d3701271a5e50142b280915f0
 `
     );
     const forecastapi = await fetch(
@@ -94,7 +100,7 @@ function App() {
 
   const getWeatherLondon = async () => {
     const api = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=london&appid=62029f0d3701271a5e50142b280915f0
+      `https://api.openweathermap.org/data/2.5/weather?q=london&appid=62029f0d3701271a5e50142b280915f0
 `
     );
     const forecastapi = await fetch(
@@ -124,15 +130,9 @@ function App() {
 
   const { datasp, datafp, temp, sky, icon, time } = paris;
 
-  useEffect(() => {
-    getWeatherParis();
-    getWeatherMoscow();
-    getWeatherLondon();
-  }, []);
-
   const getWeatherParis = async () => {
     const api = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=paris&appid=62029f0d3701271a5e50142b280915f0
+      `https://api.openweathermap.org/data/2.5/weather?q=paris&appid=62029f0d3701271a5e50142b280915f0
 `
     );
     const forecastapi = await fetch(
@@ -253,7 +253,7 @@ function App() {
                 </Typography>
 
                 <img
-                  src={`http://openweathermap.org/img/w/${icon}.png`}
+                  src={`https://openweathermap.org/img/w/${icon}.png`}
                   alt="icon"
                   width="60"
                   height="50"
@@ -311,7 +311,7 @@ function App() {
                                   Temp: {item.main.temp}℃
                                 </Typography>
                                 <img
-                                  src={`http://openweathermap.org/img/w/${item.weather[0].icon}.png`}
+                                  src={`https://openweathermap.org/img/w/${item.weather[0].icon}.png`}
                                   alt="icon"
                                   width="60"
                                   height="50"
@@ -348,7 +348,7 @@ function App() {
                 </Typography>
 
                 <img
-                  src={`http://openweathermap.org/img/w/${icon}.png`}
+                  src={`https://openweathermap.org/img/w/${icon}.png`}
                   alt="icon"
                   width="60"
                   height="50"
@@ -405,7 +405,7 @@ function App() {
                                   Temp: {item.main.temp}℃
                                 </Typography>
                                 <img
-                                  src={`http://openweathermap.org/img/w/${item.weather[0].icon}.png`}
+                                  src={`https://openweathermap.org/img/w/${item.weather[0].icon}.png`}
                                   alt="icon"
                                   width="60"
                                   height="50"
@@ -442,7 +442,7 @@ function App() {
                 </Typography>
 
                 <img
-                  src={`http://openweathermap.org/img/w/${icon}.png`}
+                  src={`https://openweathermap.org/img/w/${icon}.png`}
                   alt="icon"
                   width="60"
                   height="50"
@@ -499,7 +499,7 @@ function App() {
                                   Temp: {item.main.temp}℃
                                 </Typography>
                                 <img
-                                  src={`http://openweathermap.org/img/w/${item.weather[0].icon}.png`}
+                                  src={`https://openweathermap.org/img/w/${item.weather[0].icon}.png`}
                                   alt="icon"
                                   width="60"
                                   height="50"
