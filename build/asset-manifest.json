@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/TestRosEl/static/css/main.b34adc22.chunk.css",
+    "main.js": "/TestRosEl/static/js/main.f0136edc.chunk.js",
+    "main.js.map": "/TestRosEl/static/js/main.f0136edc.chunk.js.map",
+    "runtime-main.js": "/TestRosEl/static/js/runtime-main.e461f6e2.js",
+    "runtime-main.js.map": "/TestRosEl/static/js/runtime-main.e461f6e2.js.map",
+    "static/js/2.411ec174.chunk.js": "/TestRosEl/static/js/2.411ec174.chunk.js",
+    "static/js/2.411ec174.chunk.js.map": "/TestRosEl/static/js/2.411ec174.chunk.js.map",
+    "index.html": "/TestRosEl/index.html",
+    "precache-manifest.2f73123f94ae84e65d6bae81cf566dbe.js": "/TestRosEl/precache-manifest.2f73123f94ae84e65d6bae81cf566dbe.js",
+    "service-worker.js": "/TestRosEl/service-worker.js",
+    "static/css/main.b34adc22.chunk.css.map": "/TestRosEl/static/css/main.b34adc22.chunk.css.map",
+    "static/js/2.411ec174.chunk.js.LICENSE.txt": "/TestRosEl/static/js/2.411ec174.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e461f6e2.js",
+    "static/js/2.411ec174.chunk.js",
+    "static/css/main.b34adc22.chunk.css",
+    "static/js/main.f0136edc.chunk.js"
+  ]
+}
